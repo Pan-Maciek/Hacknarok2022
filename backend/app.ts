@@ -22,7 +22,7 @@ const createError = (statusCode: number) => {
 };
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
+app.use(function (req: Request, res: Response, next: any) {
   next(createError(404));
 });
 
