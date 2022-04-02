@@ -2,15 +2,16 @@ import React from 'react';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {createRoot} from "react-dom/client";
-import StepList from "./steplist/steplist";
+import StepList, {StepListProps} from "./steplist/StepList";
+import data from './data.json'
 
 const container = document.getElementById('root') as Element
+console.log(data)
 
-const mockData = [{ title: "Test title", description: "this is a description" }, {title: "Second title", description: "second "}]
 const root = createRoot(container)
 root.render(
     <React.StrictMode>
-        <StepList steps={mockData}/>
+        <StepList {...(data.categories[0] as any as StepListProps)} />
     </React.StrictMode>
 )
 
