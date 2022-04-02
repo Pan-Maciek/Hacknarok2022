@@ -6,6 +6,7 @@
     "start": "node ./build/app.js",
     "build": "tsc",
     "dev": "ts-node-dev ./app.ts",
+    "dev-local": "NODE_ENV=local ts-node-dev ./app.ts",
     "format": "prettier --write  '*.{json,js}' './**/*.{js,ts,html}' '../.github/**/*.{yaml,yml}'"
   },
   "dependencies": {
