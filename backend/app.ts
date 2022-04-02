@@ -2,7 +2,7 @@ import express, { Application, Request, Response } from "express";
 import logger from "morgan";
 
 const app: Application = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 // Body parsing Middleware
 app.use(logger("dev"));
