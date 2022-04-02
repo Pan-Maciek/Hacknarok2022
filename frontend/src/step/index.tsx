@@ -5,7 +5,6 @@ type StepProps = { title: string, description: string }
 
 const Step = ({ title, description }: StepProps) => {
 
-
     return <div>
         <h1>{title}</h1>
     </div>
