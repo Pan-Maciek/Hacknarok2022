@@ -1,0 +1,5 @@
+{
+  "Db": {
+    "Uri": "mongodb://localhost:27017"
+  }
+}
