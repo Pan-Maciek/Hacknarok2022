@@ -1,4 +1,9 @@
 {
-	"Database": {
+	"Db": {
+		"Uri": "mongodb+srv://db-user:80Gq0gljYLDR5xaQ@cluster0.snge9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+		"dbName": "be"
+	},
+	"Default": {
+		"Port": 8080
 	}
 }

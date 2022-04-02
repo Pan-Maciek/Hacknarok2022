@@ -1,14 +1,18 @@
 import express, { Application, Request, Response } from "express";
 import logger from "morgan";
+import config from "config";
+import { connect } from "./persistence/client";
 
 const app: Application = express();
-const port = process.env.PORT || 8080;
+const port: number | string = process.env.PORT || config.get("Default.Port");
 
 // Body parsing Middleware
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // app.use(express.static(path.join(__dirname, "public")));
+
+connect();
 
 // let indexRouter = require("./routes/index");
 import indexRouter from "./routes/index";
