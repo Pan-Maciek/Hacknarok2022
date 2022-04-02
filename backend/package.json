@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "ts-node-dev ./app.ts",
-    "format": "prettier --write  '*.{json,js}' './**/*.{js,ts,html}'"
+    "format": "prettier --write  '*.{json,js}' './**/*.{js,ts,html}' '.github/**/*.{yaml,yml}'"
   },
   "dependencies": {
     "config": "^3.3.7",
